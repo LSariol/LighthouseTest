@@ -1,13 +1,14 @@
+name: lighthousetest
+
 services:
-  app:
+  lighthousetest:
     build:
       context: .
       dockerfile: Dockerfile
       # Uncomment to override version at build-time
       # args:
       #   VERSION_ARG: "1.2.3"
-    image: lighthouse-test:latest
-    container_name: lighthouse-test
+    container_name: lighthousetest
     environment:
       # At runtime, this overrides the embedded VERSION file
       - APP_VERSION=
@@ -19,5 +20,5 @@ services:
     #   - ./VERSION:/srv/VERSION:ro
     restart: unless-stopped
 
-name: lighthouse
+
 
