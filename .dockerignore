@@ -1,0 +1,19 @@
+# Go build output
+bin/
+*.out
+*.test
+
+# Git
+.git
+.gitignore
+
+# Editors/OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+
